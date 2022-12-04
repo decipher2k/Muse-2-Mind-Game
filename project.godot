@@ -1,0 +1,34 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Muse 2 Mind Game"
+run/main_scene="res://assets/Main.tscn"
+boot_splash/image="res://assets/mindgame.png"
+boot_splash/bg_color=Color( 1, 1, 1, 1 )
+config/icon="res://gehirn.ico"
+config/windows_native_icon="res://gehirn.ico"
+
+[gdnative]
+
+singletons=[ "res://assets/pythonscript.gdnlib" ]
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://assets/default_env.tres"
